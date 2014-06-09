@@ -1253,7 +1253,7 @@ Object[] objList = new Object[0];
 Game myGame;
 
 void setup() {
-  size(800,600);//P3D
+  size(1200,800);//P3D
   
 
   
