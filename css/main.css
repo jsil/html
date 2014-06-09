@@ -1,0 +1,599 @@
+/* ~~~~~~~~~~~~ CHANGE FONTS ~~~~~~~~~~~~ */
+html {font-family: 'Raleway', sans-serif; }
+h1 { font-family: 'Raleway', sans-serif; font-weight:800; }
+p  { font-family: 'Raleway', sans-serif;}
+
+
+p:nth-of-type(1) {
+	text-align: center;
+}
+
+
+
+/*INDEX*/
+#recentBox {
+	/*float:left;
+	height:600px;*/
+	width:100%;
+	border: 1px solid #aaaaaa;
+	background-color:white;
+	border-radius: 4px;
+	/*margin-left: 5px;*/
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+#recentHeader {
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding-bottom: 15px;
+
+}
+
+#recentJobs {
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+}
+
+
+
+#stevie{
+	margin-left: 20px;
+	float:left;
+}
+
+.postings {
+	padding: 15px;
+}
+
+/* Job Modal */
+/*.jobModal {
+	position: absolute;
+	height:50%;
+	width: 80%;
+	background: white;
+	border: 1px solid #aaaaaa;
+	border-radius: 4px;
+	z-index: 20;
+
+}*/
+
+.requestJob {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.jobContact {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.jobIcon {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.jobModalNotes {
+	margin-top:15px;
+}
+
+/* TABS */
+/* Default color for links inside the tabbed box */ 
+.ui-widget-content a, .ui-widget-content a:hover, .ui-widget-content a:visited, .ui-widget-content a:active {
+color: #2954d1 !important; 
+text-decoration: underline !important; 
+}
+
+/* Default styling for  tab titles */ 
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+color: #212121 !important;
+text-decoration: none !important;
+cursor: pointer !important;
+}
+
+/* Default styling for unselected tab titles */ 
+.ui-state-default a:hover, .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+color: #555555 !important;
+text-decoration: none !important;
+cursor: pointer !important;
+font-size: 14px !important;
+margin-bottom: 2px;
+}
+
+.ui-widget-header{ 
+	border:0px solid !important;
+	background: rgba(255, 0, 255, 0) !important;
+	position: absolute;
+	top: -40px;
+}
+
+
+.ui-tabs.ui-widget-content{
+	margin-top:35px !important;
+}
+
+
+#tabs {
+	width: 100%;
+	height: 100%;
+	float:left;
+	margin-left: 45px;
+
+}
+
+/*NO MORE TABS*/
+
+
+
+/*DASHBOARD*/
+
+.smallText {
+	font-size: 9px;
+}
+
+.center {
+	text-align: center;
+}
+
+.cancelCenter {
+	margin-left:165px;	/*TODO: ACTUALLY CENTER THIS!*/
+	cursor:pointer;
+}
+
+.cancelJob {
+	cursor:pointer;
+	margin-right: 25px;
+}
+
+.jobCompleted {
+	cursor:pointer;
+	margin-left: 25px;
+}
+
+.decline {
+	cursor:pointer;
+	margin-right: 25px;
+}
+
+.accept {
+	cursor:pointer;
+	margin-left: 25px;
+}
+
+.seperator {
+	width: 0px;
+	float:left;
+	height:80px;
+	border:solid 1px rgb(210,210,210);
+}
+
+h3 {
+	text-align: center;
+}
+
+.dashboardSection {
+	float:left;
+	width: 100%;
+	border: 1px solid #aaaaaa;
+	border-radius: 4px;
+	background-color: white;
+	margin-bottom:15px;
+	height: 98%;
+}
+
+.title {
+	text-align: center;
+	font-size: 24px;
+	margin: 10px;
+}
+
+
+.jobPic {
+	position:relative;
+	width:85px;
+	float:left;
+	margin-left: -15px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+.jobContactInfo {
+	float:left;
+	position:relative;
+	margin-left: -50px;
+	width: 75%;
+	font-size: 12px;
+
+}
+
+.jobDashPrice {
+	margin-top: -15px;
+	text-align:center;
+}
+
+.jobMap {
+	border: solid 1px #aaaaaa;
+	float:left;
+	width:150px;
+	height:150px;
+	margin-right:30px;
+	margin-top:25px;
+}
+
+.jobNotes {
+	border: solid 1px #aaaaaa;
+	border-radius: 5px;
+	float:left;
+	width:275px;
+	height:200px;
+	font-size: 14px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	overflow-y: auto;
+
+}
+
+.notesHeader {
+	font-size: 18px;
+	margin:0px;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+.bidHeader {
+	border-bottom:solid 1px rgb(210,210,210);
+	margin-bottom: 15px;
+	padding-bottom: 50px;
+	height:65px;
+}
+
+input[type="button"] {
+	border:1px solid #aaaaaa;
+	border-radius: 5px;
+	background-color: white;
+}
+
+input[type="submit"] {
+	border:1px solid #aaaaaa;
+	border-radius: 5px;
+	background-color: white;
+	cursor:pointer;
+}
+
+
+
+.jobHeader {
+	text-align: center;
+	margin-top: -5px;
+
+}
+
+.jobProfile {
+	width:100%;
+	height: 200px;
+	border: 1px solid #aaaaaa;
+	border-radius: 5px;
+}
+
+/*ACCORDIAN*/
+
+/*.ui-accordion-content {
+	overflow: visible !important;
+}*/
+
+
+/*ACCOUNT*/
+#profile {
+	border: 1px solid #aaaaaa;
+	border-radius: 4px;
+	width:95%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:white;
+}
+
+#profilePic {
+	height: 100px;
+	width: 100px;
+	float:left;
+	margin:15px;
+	margin-top: 20px;
+}
+
+#contactInfo {
+	float:left;
+	padding: 15px;
+	margin-left: 30px;
+
+}
+
+#badges {
+	text-align: center;
+	font-size: 24px;
+	margin:-5px;
+}
+
+#badgeSpace {
+	font-size:16px;
+    left: 50%;
+    width: auto;
+    height: 300px;
+    margin-top:35px;
+}
+
+.badge {
+	float:left;
+	width:150px;
+	margin: 25px;
+}
+
+.badgeImg {
+	width:150px;
+}
+
+.badgeName {
+	text-align:center;
+}
+
+.badgeDesc {
+	margin-top: -15px;
+	text-align:center;
+}
+
+.profileSection:nth-of-type(1) {
+	border-bottom: solid 1px #aaaaaa;
+}
+
+.profileSection:nth-of-type(2) {
+	height:300px;
+}
+
+.profileSection {
+	margin: 15px;
+	min-height: 150px;
+	height: auto;
+}
+
+
+.ratingDiv {
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+
+.profileRatingLabel {
+	margin-bottom: 10px;
+}
+
+.ratingLabel {
+	font-size: 14px;
+	height:25px;
+	margin-left: 10px;
+	margin-top: 9px;
+
+}
+
+.barArea {
+	margin-left: 70px;
+	margin-top: 12px;
+	height: 25px;
+	width: 60%;
+	position: relative;
+	top: -5.5px;
+	left : 10px;
+	border: solid 1px #575353;
+	padding: 1px;
+}
+
+.ratingFg {
+	position:relative;
+	bottom : 20.5px;
+	background-color: rgb(34,46,64);
+	height: 90%;
+}
+
+.ratingBg {
+	background-color: #E4E4E4;
+	height: 100%;
+
+}
+
+.blue{
+	background-color:#2c3e50;
+}
+.yellow{
+	background-color:#f1c40f;
+	color:white;
+}
+div[id*=recentPosting]{
+	width:45% !important;
+	margin-right:5% !important;
+}
+
+.overlay {
+	background-image:url(../img/semi_transparent.png);
+	position: absolute;
+	z-index: 20;
+}
+
+
+
+
+/*SETTINGS*/
+
+#settings {
+	border: 1px solid #aaaaaa;
+	border-radius: 4px;
+	background-color:white;
+	padding:15px;
+	padding-top: 0px;
+	margin-bottom: 30px;
+}
+
+.settingLabel {
+	text-align: right;
+	margin-top: 4px;
+
+}
+
+.setting {
+	margin-right: 80px;
+	text-align: center;
+}
+
+#imagePreview {
+	height:150px;
+	margin:15px;
+}
+
+#preview {
+}
+
+#uploadArea {
+	margin: 15px;
+	margin-left: -50px;
+	padding-left: 40px;
+	padding-bottom: 15px;
+	border-left: solid 1px #aaaaaa;
+}
+
+#uploadedFile {
+	margin-top: 5px;
+}
+
+.settingsSubmit {
+	margin-top: 10px;
+}
+
+.horizontalSeperator {
+	padding-bottom:15px;
+	border-bottom: solid 1px #aaaaaa;
+	margin-bottom: 15px;
+}
+
+	/*RATINGS*/
+
+.starRating{
+  display        : inline-block;
+  position       : relative;
+  height         : 24px;
+  background     : url('../img/stars2.png') repeat-x 0 0;
+  vertical-align : bottom;
+}
+
+.starRating div{
+  float    : left;
+  position : relative;
+  height   : 24px;
+}
+
+.starRating input{
+  position : relative;
+  z-index  : 1;
+  width    : 34px;
+  height   : 24px;
+  margin   : 0;
+  padding  : 0;
+  opacity  : 0;
+}
+
+.starRating label{
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 24px;
+}
+
+.starRating span{
+  display : none;
+  height:24px;
+}
+
+.starRating       input:checked       + label,
+.starRating:hover input:checked:hover + label{
+  background : url('../img/stars2.png') repeat-x 0 -24px;
+}
+
+/*.starRating:hover input:checked + label{
+  background : transparent;
+}*/
+
+/*.starRating:hover input:hover + label{
+  background : url('../img/stars2.png') repeat-x 0 -48px;
+}*/
+
+
+.submitRating{
+  display        : inline-block;
+  position       : relative;
+  height         : 24px;
+  background     : url('../img/stars2.png') repeat-x 0 0;
+  vertical-align : bottom;
+}
+
+.submitRating div{
+  float    : left;
+  position : relative;
+  height   : 24px;
+}
+
+.submitRating input{
+  position : relative;
+  z-index  : 1;
+  width    : 34px;
+  height   : 24px;
+  margin   : 0;
+  padding  : 0;
+  opacity  : 0;
+}
+
+.submitRating label{
+  position : absolute;
+  top      : 0;
+  left     : 0;
+  width    : 100%;
+  height   : 24px;
+}
+
+.submitRating span{
+  display : none;
+  height:24px;
+}
+
+.submitRating       input:checked       + label,
+.submitRating:hover input:checked:hover + label{
+  background : url('../img/stars2.png') repeat-x 0 -24px;
+}
+
+.submitRating:hover input:checked + label{
+  background : transparent;
+}
+
+.submitRating:hover input:hover + label{
+  background : url('../img/stars2.png') repeat-x 0 -48px;
+}
+
+/*Dashboard Modals*/
+
+#jobCompleteForm {
+	padding:15px;
+	text-align: center;
+}
+
+.jobRating {
+	margin-top:15px;
+}
+
+#ratingSubmit {
+	margin-top:15px;
+}
+
+#cancelSubmit {
+	margin-top:15px;
+}
+
+#cancelJobForm {
+	padding:15px;
+	text-align: center;
+}

@@ -1,0 +1,195 @@
+body {
+	margin: 0px;
+}
+
+.currentJob {
+	cursor: pointer;
+}
+.currentPage {
+	background-color: rgb(34,46,64)
+}
+
+.currentPage a {
+	color: rgb(255,255,255);
+}
+
+#title {
+	color: rgb(0,0,0);
+}
+
+#navMenu {
+	background-color: rgb(246,246,246);
+}
+
+
+#navMenu h1 {
+	float:left;
+	margin: 0px 55px;
+}
+
+#navMenu a:visited, #navMenu a:link{
+	text-decoration: none;
+	color: rgb(150,150,150);
+}
+
+#navMenu ul {
+	list-style:none;
+	margin: 0px;
+}
+
+#navUser ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+#navUser {
+	margin-right: 32px;
+}
+
+#navHome, #navPostJobs, #navSignUp, #navMyJobs{
+	float: left;
+	width: 125px;
+}
+
+#navMenu li a{
+	display: block;
+	background-color: transparent;
+	padding: 1em;
+	text-align: center;
+}
+
+#userNav {
+	clear: both;
+}
+
+/*#navMenu li.hoverable  a:hover{
+	text-decoration: none;
+	color: #000;
+	background-color: rgb(219,219,219);
+}*/
+
+.selected {
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+	background-color: rgb(219,219,219);
+}
+
+#navMenu li:hover ul{
+	display: block;
+}
+
+#navLogin {
+	float: right;
+	padding-right: 15px;
+}
+
+#navUser {
+	float: right;
+}
+
+#navTokens {
+	float: right;
+	width: 125px;
+}
+
+.clear {
+	clear: both;
+}
+
+.navVisible {
+	display: block;
+}
+
+nav li {
+	display: none;
+}
+
+.close {
+	cursor: pointer;
+
+}
+.hidden{
+
+	display: none;
+
+}
+
+.selected div#userNav {
+	float: right;
+	background-color:white;
+	position: absolute;
+	z-index: 21;
+	display: block;
+}
+
+li div {
+	display:none;
+}
+
+#tokenImg {
+	float: left;
+	padding: 0px 6px;
+}
+
+h1.tokenCount{
+	float: right;
+	margin: 0px;
+	display: table-cell;
+    vertical-align: middle;
+    padding: 0px 6px;
+}
+
+/*JOB POSTINGS*/
+.jobPost {
+	 width:20%;
+	 min-width:100px;
+	 height:auto;
+	 position:relative;
+	 float:left;
+	 /*margin-right:5%;*/
+	 margin-bottom:30px;
+	 /*padding: 6px;*/
+}
+
+.jobImage {
+	width:100%;
+	min-width:85px;
+	height:auto;
+}
+
+.jobDesc {
+	position:absolute;
+	width:98%;
+	padding: 5px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: -35px;
+	text-align: center;
+	color:black;
+	z-index: 1;
+	background-color: white;
+	opacity: 0.55;
+	font-size: 14px;
+}
+
+.jobPrice {
+	position:absolute;
+	/*width:25px;
+	height:25px;*/
+	border:2px solid rgb(75,75,75);
+	border-radius: 5px;
+	text-align: center;
+	color:black;
+	z-index: 1;
+	background-color: white;
+	bottom: 0;
+	right: 15px;
+	opacity: 0.90;
+}
+
+.jobFiller {
+	height:100%;
+	width:100%;
+	z-index:5;
+}

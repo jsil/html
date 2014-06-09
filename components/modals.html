@@ -1,0 +1,338 @@
+<div id="modalOverlay"></div>
+
+<div class = "modal" id="jobPostModal">
+
+	<div class = "modalTitle yellow">
+
+			<h1>Post a Job</h1>
+
+			<button type = "button" class = "closeButton">
+				<span>X</span>
+			</button>
+
+			<div class = "clear"></div>
+
+	</div>
+
+		<form class = "jobPostForm">
+
+			<div class = "modalColumnLeft">
+			
+				<select name="category" id="jobCategory" title = "Select One" required>
+					<option value="0" selected = "1">Job Category</option>
+					<option value="1">Food</option>
+					<option value="2">Rides</option>
+					<option value="3">Groceries</option>
+					<option value="4">Cleaning</option>
+					<option value="5">Laundry</option>					
+					<option value="6">Maintenance</option>
+					<option value="7">Tech Support</option>					
+					<option value="8">Other</option>
+				</select>
+
+
+				<label for="jobPrice">Price 
+					<span>(Dollar Amounts Only)</span>
+				</label>
+				<input type="number" id = "jobPrice" name="quantity" value = "3.00" min="3.00" max = "20.00" step = "1.00" title = "Dollar Amounts Only greater than 2">
+
+				<label for="jobDeadlineDate">Deadline Date</label>
+				<input  id="jobDeadlineDate" type="date" name="deadlineDate" text="Current day or Later">
+
+				<label for="jobDeadlineTime">Deadline Time</label>
+				<input id="jobDeadlineTime" type="time" name="deadlineTime" title="At least 30 minutes from current time">
+
+			</div>
+
+			<div class = "modalColumnRight">
+
+				<input type="text" id = "jobDescription" placeholder="SHORT DESCRIPTION" title = "Ex. Burgers and Fries" required>
+				<br>
+				<input type="text" id = "jobLocation" placeholder="MEETING LOCATION" title = "Ex. Fondy Science" required>
+				<br>
+				<textarea name="jobNotes" id="jobNotes" cols="22" rows="4" placeholder="NOTES"></textarea>
+
+			</div>
+
+
+			<div class = "modalRow clear">
+		 
+			  	<input type="submit" value="Post Job" class = "buttonRight">
+
+		  	</div>
+		 </form>
+</div>
+
+<div class = "modal" id="accountModal">
+
+	<div class = "modalTitle yellow">
+
+			<h1>Sign up</h1>
+
+			<button type = "button" class = "closeButton">
+				<span>X</span>
+			</button>
+
+			<div class = "clear"></div>
+
+	</div>
+	<form class= "accountForm">
+
+		<div class = "modalRow">
+		  	<input id="accountFName" type="text" name="fname" placeholder="FIRST NAME" required> 
+		  	<input id="accountLName" type="text" name="lname" placeholder="LAST NAME" required>	 
+		</div>	  
+
+		<div class = "modalRow">
+		  	<input id="accountEmail" type="email" name="email" placeholder="EMAIL" required pattern="\w+@\w+.\w+" title="not a valid email address">
+		  	<input id="accountPhoneNumber" type="tel" name="phonenumber" placeholder="PHONE NUMBER" title = "Format XXX-XXX-XXXX" maxlength = "12" required>
+		</div>
+
+		<div class = "modalRow">
+		  	<input id="accountPassword" type="password" name="password" placeholder="PASSWORD" required pattern=".{8,}" title="password must be greater than or equal to 8 characters">
+		  	<input id="accountConfirmPassword" type="password" name="password" placeholder="CONFIRM PASSWORD" required pattern=".{8,}" title="Password must be greater than or equal to 8 characters">
+	  	</div>
+
+	  	<div class = "modalRow">
+	  		<label for = "accountBirthDate">Birthday</label>
+	  		<br>
+	  		<input type = "date" id = "accountBirthDate" title = "Must be at least 18 years old to use site!" required>
+	  		<input type = "radio" name = "accountGender" value = "M" checked = "true">Male
+		  	<input type = "radio" name = "accountGender" value = "F">Female
+	  	</div>
+	  	
+	  	<div class = "modalRow">
+		  	<input type="submit" value="Create Account" class = "buttonRight">
+		  	<div class = "clear"></div>
+		</div>
+
+	 </form>
+
+</div>
+
+<div class = "modal" id="tokenModal">
+
+	<div class = "modalTitle yellow">
+
+			<h1>Tokens</h1>
+
+			<button type = "button" class = "closeButton">
+				<span>X</span>
+			</button>
+
+			<div class = "clear"></div>
+
+	</div>
+
+
+	<div id="currentToken" class = "modalColumnLeft">
+		<h2>Currrent Tokens</h2>
+		<div class = "subContent">
+			<img src="img/tokenOne.png">
+			<p><strong class = "tokenCount">10</strong></p>
+		</div>
+	</div>	  
+
+	  	
+  	<div id="tokenInfo" class = "modalColumnRight">
+		<h2>Tokens</h2>
+		<div>
+			<p>Tokens allow you to do jobs for others and earn money.  Each job cost one token which will be taken only when you are selected to work on the jobs you bid on.  You will not be allowed to bid on Jobs if you are out of tokens.</p>
+		</div>
+	</div>
+
+	<div class = "clear"></div>
+
+	<form action = "tokens.php">
+		<input type = "submit" value="Buy Tokens" class = "buttonRight">
+	</form>
+
+	<div class = "clear"></div>
+
+</div>
+
+<div class = "modal" id="jobModal">
+
+	<div class = "modalTitle yellow">
+
+		<h1 id = "modalCategory">Food</h1>
+
+		<button type = "button" class = "closeButton">
+			<span>X</span>
+		</button>
+
+		<div class = "clear"></div>
+
+	</div>
+
+	<div  class = "modalColumnLeft subContent">
+		<div>
+			<img class = "jobImage" src = "img/food.png">
+		</div>
+		<span id = "beggerName">Carter Dewey</span>
+		<br>
+		<span id = "jobDeadline">Complete By:</span>
+
+	</div>
+
+	<div class = "modalColumnRight">
+		<div class = "subContent">
+			<span id = "modalDescription">Description: </span>
+			<br>
+			<span id = "modalPayment">Pays: </span>
+			<br>
+			<span id = "modalLocation">Location: </span>
+			<br>
+			<span id = "modalNotes">Notes: </span>
+		</div>
+	</div>
+
+	<div class = "clear"></div>
+
+	<form class = "offerHelp">
+		<input type = "submit" value="Offer Help" class = "buttonRight">
+		<input id="modalTaskId" type = "hidden" value = "711">
+	</form>
+
+	<div class = "clear"></div>
+
+</div>
+
+<div class = "modal" id="successModal">
+
+	<div class = "modalTitle yellow">
+
+			<h1>Success</h1>
+
+			<button type = "button" class = "closeButton">
+				<span>X</span>
+			</button>
+
+			<div class = "clear"></div>
+
+	</div>
+
+	<div>
+		<h2 class = "successTitle"></h2>
+		
+	</div>	   
+
+</div>
+
+<div class = "modal" id="errorModal">
+
+	<div class = "modalTitle yellow">
+
+			<h1>Error</h1>
+
+			<button type = "button" class = "closeButton">
+				<span>X</span>
+			</button>
+
+			<div class = "clear"></div>
+
+	</div>
+
+	<div>
+		<h2 class = "errorTitle"></h2>
+		<div class = "subContent">
+			<p id="errorInfo"></p>
+		</div>
+	</div>	   
+
+</div>
+
+<div class="modal" id="cancelJobModal">
+	<div class = "modalTitle yellow">
+		<h1>Cancel Job</h1>
+
+		<button type = "button" class = "closeButton">
+			<span>X</span>
+		</button>
+
+		<div class = "clear"></div>
+	</div>
+	<div>
+		<form id="cancelJobForm">
+			Are you sure you want to cancel this job?<br>
+			<input type="submit" value="Cancel Job" id="cancelSubmit">
+		</form>
+	</div>
+
+</div>
+
+<div class="modal" id="jobCompleteModal">
+	<div class = "modalTitle yellow">
+		<h1>Job Complete</h1>
+
+		<button type = "button" class = "closeButton">
+			<span>X</span>
+		</button>
+
+		<div class = "clear"></div>
+	</div>
+	<div>
+		<form id="jobCompleteForm">To mark this job as complete, <br>please rate the person who helped you:
+			<div class="jobRating">Reliability Rating:
+				<div>
+			        <div class="submitRating">
+						<div>
+					    	<div>
+					      		<div>
+					        		<div>
+					          			<input id="reliabilityRating1" type="radio" name="reliabilityRating" value="1">
+					       			  	<label for="reliabilityRating1"><span>1</span></label>
+						    			</div>
+						    		    <input id="reliabilityRating2" type="radio" name="reliabilityRating" value="2">
+						   		     	<label for="reliabilityRating2"><span>2</span></label>
+						   		   	</div>
+						  		   	<input id="reliabilityRating3" type="radio" name="reliabilityRating" value="3">
+								    <label for="reliabilityRating3"><span>3</span></label>
+							    </div>
+							    <input id="reliabilityRating4" type="radio" name="reliabilityRating" value="4">
+							    <label for="reliabilityRating4"><span>4</span></label>
+						  	</div>
+						<input id="reliabilityRating5" type="radio" name="reliabilityRating" value="5">
+						<label for="reliabilityRating5"><span>5</span></label>
+					</div>
+			    </div>
+       		</div>
+			<div class="jobRating">Speed Rating:
+				<div>
+			        <div class="submitRating">
+						<div>
+					    	<div>
+					      		<div>
+					        		<div>
+					          			<input id="speedRating1" type="radio" name="speedRating" value="1">
+					       			  	<label for="speedRating1"><span>1</span></label>
+						    			</div>
+						    		    <input id="speedRating2" type="radio" name="speedRating" value="2">
+						   		     	<label for="speedRating2"><span>2</span></label>
+						   		   	</div>
+						  		   	<input id="speedRating3" type="radio" name="speedRating" value="3">
+								    <label for="speedRating3"><span>3</span></label>
+							    </div>
+							    <input id="speedRating4" type="radio" name="speedRating" value="4">
+							    <label for="speedRating4"><span>4</span></label>
+						  	</div>
+						<input id="speedRating5" type="radio" name="speedRating" value="5">
+						<label for="speedRating5"><span>5</span></label>
+					</div>
+			    </div>
+       		</div>
+       		<input type="submit" value="Submit Rating" id="ratingSubmit">
+   		</form>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
