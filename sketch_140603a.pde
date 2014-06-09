@@ -773,7 +773,7 @@ class Object {
   float w;//width
   float h;//height
   color color1;
-  boolean isOnTop;
+  boolean onTop;
   
   Object() {//don't use this
     x = 0;
@@ -834,15 +834,15 @@ class Object {
        if(y2 >= y && y1 <= (y-(y2-y1))) {
          isIntersect = true;
          if(y2 == y)
-           isOnTop = true;
+           onTop = true;
          else
-           isOnTop = false;
+           onTop = false;
        }
        else
-         isOnTop = false;
+         onTop = false;
      }
      else
-       isOnTop = false;
+       onTop = false;
      return isIntersect; 
   }
   
@@ -850,7 +850,7 @@ class Object {
      boolean isIntersect = false;
      //check if it is vertically intersecting
      if(x2 >= x && x1 <= (x + w)) {
-       //check botto  m of object
+       //check bottom of object
        if(y2 <= y && y1 >= (y + h))
          isIntersect = true;
      }
@@ -903,7 +903,7 @@ class Object {
 //  }
 
     boolean isOnTop(float x1,float y1, float x2, float y2) {
-       return isOnTop;//only applies to moving objects. These objects will have this function overloaded 
+       return onTop;//only applies to moving objects. These objects will have this function overloaded 
     }
     
     float xChange() {
@@ -1225,17 +1225,17 @@ class Finish extends Object {
          isIntersect = true;
          if(y2 == y) {
            me.drawObj();//force character to be redrawn incase character is falling, so it can hit the ground first. fix this eventually
-           isOnTop = true;
+           onTop = true;
            myGame.beatLevel();
          }
          else
-           isOnTop = false;
+           onTop = false;
        }
        else
-         isOnTop = false;
+         onTop = false;
      }
      else
-       isOnTop = false;
+       onTop = false;
      return isIntersect; 
   }
   
@@ -1253,7 +1253,8 @@ Object[] objList = new Object[0];
 Game myGame;
 
 void setup() {
-  size(1280, 800);//P3D
+  size(1280,800);//P3D
+  //println("" + displayWidth + " " + displayHeight);
   
 
   
