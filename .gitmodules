@@ -1,3 +1,3 @@
 [submodule "SummerGames"]
 	path = SummerGames
-	url = git://github.com/jsil/SummerGames.git
+	url = https://github.com/jsil/SummerGames
