@@ -5,12 +5,12 @@
 
 <div class="row yellow">
 	<div class="twelve columns">
-		<p id="randomText">HELP IS COMING. SLOWLY. FEEL FREE TO TAKE A NAP.</p>
+		<p id="randomText">WORK IN PROGRESS</p>
 	</div>
 </div>
 <br>
 <div class="row" id="contentArea">
-	<a href="game.php">Link Text</a>
+	<a href="SummerGames">Summer Games</a>
 		
 </div>
 
