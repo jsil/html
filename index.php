@@ -10,7 +10,7 @@
 </div>
 <br>
 <div class="row" id="contentArea">
-	<a href="SummerGames">Summer Games</a>
+	<a href="SummerGames">Summer Games!</a>
 		
 </div>
 
