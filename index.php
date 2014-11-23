@@ -11,7 +11,18 @@
 <br>
 <div class="row" >
 	<div id="contentArea" class="lightblue">
-		<a href="SummerGames">Summer Games!</a>
+		<div class="row">
+			<div class="column nine">
+				<a href="SummerGames">Summer Games!</a>
+			</div>
+			<div class="column three columnRight">
+				<img src="img/mypic.jpg" id="myPic">
+				<br>
+				<div class="center">
+				Jordan Silver
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
