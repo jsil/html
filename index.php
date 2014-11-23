@@ -5,13 +5,14 @@
 
 <div class="row yellow">
 	<div class="twelve columns">
-		<p id="randomText">WORK IN PROGRESS</p>
+		<p id="topText">I DO THINGS</p>
 	</div>
 </div>
 <br>
-<div class="row" id="contentArea">
-	<a href="SummerGames">Summer Games!</a>
-		
+<div class="row" >
+	<div id="contentArea" class="lightblue">
+		<a href="SummerGames">Summer Games!</a>
+	</div>
 </div>
 
 
